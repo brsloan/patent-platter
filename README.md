@@ -3,7 +3,7 @@ Interprets and maps aliquots of land patents in the Public Land Survey System
 
 This takes historical data on federal land patents from the Bureau of Land Management Office to map the original purchasers of land. It also allows you to filter by year and see how the purchasing of land progressed over time.
 
-See a live version here: https://codepen.io/brsloan/full/LaEqLe
+See a live version here: https://clintonhistorymuseum.org/etc/patentplatter/
 
 <h2>Data Model</h2>
 In this example, I have taken data from their website for a particular region of Indiana and put it in my own database with this form (random example given):
