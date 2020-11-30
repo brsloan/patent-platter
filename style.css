@@ -1,0 +1,269 @@
+body {
+  background-color: #fdfaf0;
+  font-family: Cambria;
+}
+
+a {
+  color: #05216d;
+}
+
+h1 {
+  text-align: center;
+}
+
+.sq {
+  display: block;
+  border: 1px solid rgba(255, 0, 0, 0);
+  width: 40px;
+  height: 40px;
+  margin: 0px 0px 0px 0px;
+  padding: 0px;
+  float: left;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.sq p {
+  opacity: 100;
+  overflow: hidden;
+  font-size: 8pt;
+}
+
+.quarter {
+  display: block;
+  width: 84px;
+  height: 84px;
+  float: left;
+}
+
+.section {
+  display: block;
+  width: 168px;
+  height: 168px;
+  float: left;
+  border: 1px solid gray;
+  margin: 0px;
+  position: relative;
+}
+
+.secLabel {
+  position: absolute;
+  left: 42.5%;
+  top: 30%;
+  font-size: 17pt;
+  text-shadow: -1px -1px gray;
+}
+
+.township,
+.platHeader,
+.controls {
+  width: 1020px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.township {
+  height: 1020px;
+  margin-bottom: 20px;
+  background-image: url();
+  background-size: 1020px 1020px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.modal-content h3 {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Slider */
+.slidecontainer {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4caf50;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4caf50;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}
+
+#selector {
+  display: none;
+  width: 420px;
+  height: 420px;
+  background-image: url(./img/selector.png);
+  background-size: 420px 420px;
+  position: absolute;
+  z-index: 1;
+}
+
+.selectorSq {
+  display: block;
+  width: 84px;
+  height: 84px;
+  border-width: 0px;
+  margin: 0px 0px 0px 0px;
+  padding: 0px;
+  float: left;
+  cursor: pointer;
+  text-align: center;
+}
+
+.selectorSq:hover {
+  background-color: rgba(255, 99, 71, 0.5);
+}
+
+.selectorSq p {
+  font-size: 10pt;
+  margin-top: 35px;
+}
+
+.selectorSqSelected {
+  width: 82px;
+  height: 82px;
+  border: 1px dashed red;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.sortable {
+  cursor: pointer;
+}
+
+.boundary_right {
+  border-right: 1px solid gray;
+}
+
+.boundary_left {
+  border-left: 1px solid gray;
+}
+
+.boundary_top {
+  border-top: 1px solid gray;
+}
+
+.boundary_bottom {
+  border-bottom: 1px solid gray;
+}
+
+.indexFilter,
+.timeFilter {
+  opacity: 0 !important;
+}
+
+.conflict {
+  background-color: rgba(255, 15, 15, 0.85) !important;
+}
+
+.sqNoColor {
+  background-color: rgba(255, 255, 255, 0) !important;
+}
+
+.sqSelected,
+.sqSelectedSticky {
+  background-color: yellow !important;
+}
+
+.noBackground {
+  background-image: none !important;
+}
+
+.printerFriendly {
+  background-color: white;
+}
+
+.clickable {
+  cursor: pointer;
+}

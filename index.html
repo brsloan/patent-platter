@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Land Patent Platter</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="platHeader">
+  <h1 class="platTitle">Township</h1>
+  <div class="controls">
+    <div class="dropdown">
+      <button id="townshipButton" class="dropbtn">Select Township</button>
+      <div id="selector"></div>
+    </div>
+    <button id="animate">Animate</button>
+    <input type="checkbox" id="drawColors" checked>Color Code</input>
+    <input type="checkbox" id="drawBorders" checked>Draw Borders</input>
+    <input type="checkbox" id="showNames" checked>Show Names</input>
+    <input type="checkbox" id="showBackground" checked>Show Background Map</input>
+    <div class="slidecontainer">
+      <input type="range" min="1" max="100" value="100" class="slider" id="dateRange">
+    </div>
+  </div>
+  <p>As of <span id="dateDisplay"></span></p>
+</div>
+
+<div class="township"></div>
+
+<div class="controls" style="text-align: right">
+  <p id="printerLink"><a id="downloadLink" href="#">Download Map</a> || Make Printer Friendly: <a href="#" id="printMap">Map Only</a> | <a href="#" id="printIndex">Index Only</a> | <a href="#" id="printBoth">Both</a> (Click title at top to revert.)</p>
+</div>
+
+<div class="index">
+  <input type="text" id="tableSearch" class="controls" placeholder="Filter by last name...">
+  <input type="text" id="tableSearchSec" class="controls" placeholder="Filter by section...">
+  <table id="indexTable">
+    <tr>
+      <th>Accession</th>
+      <th id="nameHeader" class="sortable">Names</th>
+      <th id="dateHeader" class="sortable">Date</th>
+      <th>Township/Range</th>
+      <th>Aliquots</th>
+      <th id="sectionHeader" class="sortable">Sec</th>
+      <th>County</th>
+    </tr>
+  </table>
+</div>
+
+<div class="controls">
+  <p>Created with data from the <a href="http://glorecords.blm.gov/">Bureau of Land Management, Eastern States Office</a> and <a href="https://www.openstreetmap.org">Open Street Map</a>. Part of <a href="https://wildcathistory.net">WildcatHistory.net</a></p>
+</div>
+
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3>Names</h3>
+    <p class="modalNames"></p>
+    <h3>Date Granted</h3>
+    <p class="modalDate"></p>
+    <h3>Aliquots</h3>
+    <p class="modalAliquots"></p>
+    <p>Link To GLO Record: <a href="#" class="modalLink"></a></p>
+    <p>Search for Purchase Receipt in Indiana Archives: <a href="#" class="modalSearchLink"></a></p>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://s3.amazonaws.com/stitch-sdks/js/bundles/4/stitch.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
