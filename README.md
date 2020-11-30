@@ -27,7 +27,7 @@ It interprets the aliquots to divide a grid of HTML divs into the appropriate pl
 
 <h2>How It Needs Improved</h2>
   
- This is a messy system that does not separate logic and display very well, and since it is just a bunch of HTML divs you can't easily generate image files to download on the fly. Currently the "Download Map" link just goes to a subdirectory where, if I had uploaded them, would be a collection of premade image files corresponding to the different townships which I had made by printscreening the page. Not good. To fix this, I have created a separate SVG version that separates the logic entirely and generates an SVG graphic that can be created/downloaded on the fly. But I'm still fine tuning that.
+This is a messy system that does not separate logic and display very well, and since it is just a bunch of HTML divs you can't easily generate image files to download on the fly. Currently the "Download Map" link just goes to a subdirectory where, if I had uploaded them, would be a collection of premade image files corresponding to the different townships which I had made by printscreening the page. Not good. To fix this, I have created a separate SVG version that separates the logic entirely and generates an SVG graphic that can be created/downloaded on the fly. But I'm still fine tuning that. (If you'd like to see an example of the SVG generated map, see here: https://codepen.io/brsloan/pen/oVBJJG)
  
  Also, obviously, this is only set up to work in a specific area, but you could easily adapt it to map patent data anywhere.
  
